@@ -11,9 +11,11 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    header.classList.add("backgchange");
     header.style.height = '5%';
   } else {
     header.classList.remove("sticky");
+    header.classList.remove("backgchange");
     header.style.height = '20%';
   }
 }

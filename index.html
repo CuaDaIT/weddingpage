@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header id="header">
         <banner id="banner">
@@ -20,13 +30,17 @@
                 <span class="material-icons heart">favorite_border</span>
                 <h1> Thùy Trang</h1>
             </div>
-            <div class="secondtop"><hr class="custom-line"><h4>Just Married</h4><hr class="custom-line"></div>
+            <div class="secondtop">
+                <hr class="custom-line">
+                <h4>Just Married</h4>
+                <hr class="custom-line">
+            </div>
         </banner>
         <div id="menu">
             <div class="placeholder"></div>
-            <div><a href="#menu1">Cặp đôi</a></div>
-            <div><a href="#menu2">Album cưới</a></div>
-            <div><a href="#menu3">Sự kiện cưới</a></div>
+            <div><a href="#menu3">Cặp đôi</a></div>
+            <div><a href="#menu4">Album cưới</a></div>
+            <div><a href="#menu5">Sự kiện cưới</a></div>
             <div class="placeholder"></div>
         </div>
         <!-- <div id="sidebar">
@@ -43,27 +57,168 @@
         <div id="menu1" class="slider">
             <div class="slides-container">
                 <div class="slide active">
+                    <img src="./img/GR_07476.JPG" alt="Image 0">
+                </div>
+                <div class="slide active">
                     <img src="./img/GR_07152.JPG" alt="Image 1">
                 </div>
                 <div class="slide">
-                    <img src="./img/GR_07655.JPG" alt="Image 2">
+                    <img src="./img/GR_06817.JPG" alt="Image 2">
                 </div>
                 <div class="slide">
-                    <img src="./img/GR_07734.JPG" alt="Image 3">
+                    <img src="./img/GR_07435.JPG" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="./img/GR_07509.JPG" alt="Image 3">
                 </div>
                 <!-- Add more slides as needed -->
             </div>
             <div class="text-overlay">
-                <div class="title">
+                <!-- <div class="title">
                     <h1>Đức Toàn </h1>
                     <span class="material-icons heart">favorite_border</span>
                     <h1> Thùy Trang</h1>
-                </div>
-                <div class="title2"><hr class="custom-line"><h4>14-09-2024</h4><hr class="custom-line"></div>
+                </div> -->
+                <!-- <div class="title2">
+                    <hr class="custom-line">
+                    <h4>14 tháng 9 2024</h4>
+                    <hr class="custom-line">
+                </div> -->
             </div>
         </div>
-        <div id="menu2"></div>
-        <div id="menu3"></div>
+        <div id="menu2">
+            <section class="invitation-section section-padding section-bg-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <div class="invitation-box left" style="height: 575px;">
+                                <div class="left-vec"></div>
+                                <div class="right-vec"></div>
+                                <div class="inner">
+                                    <h2>Save the Date</h2>
+                                    <span>For the wedding of</span>
+                                    <h3>Đức Toàn &amp; Thùy Trang</h3>
+                                    <p>Một lời chúc của bạn chắc chắn sẽ làm cho đám cưới của chúng tôi có thêm một niềm
+                                        hạnh phúc!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-6">
+                            <div class="invitation-box calendar-box" style="height: 575px;">
+                                <!-- <div class="left-vec"></div>
+                                <div class="right-vec"></div> -->
+                                <div class="inner">
+                                    <div class="mini_calendar">
+                                        <table>
+                                            <caption class="calendar-month"> September / 2024</caption>
+                                            <tbody>
+                                                <tr>
+                                                    <th abbr="Sunday">Sun</th>
+                                                    <th abbr="Monday">Mon</th>
+                                                    <th abbr="Tuesday">Tue</th>
+                                                    <th abbr="Wednesday">Wed</th>
+                                                    <th abbr="Thursday">Thu</th>
+                                                    <th abbr="Friday">Fri</th>
+                                                    <th abbr="Saturday">Sat</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                    <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                    <td>11</td>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                    <td>
+                                                        <div id="today">14</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                    <td>19</td>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td>25</td>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td id="emptydays" colspan="5">&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="count-down-clock">
+                                    <div id="clock" data-date="2024-09-14" data-text-day="Ngày" data-text-hour="Giờ"
+                                        data-text-minute="Phút" data-text-second="Giây">
+                                        <div class="box">
+                                            <div>30</div> <span>Ngày</span>
+                                        </div>
+                                        <div class="box">
+                                            <div>03</div> <span>Giờ</span>
+                                        </div>
+                                        <div class="box">
+                                            <div>35</div> <span>Phút</span>
+                                        </div>
+                                        <div class="box">
+                                            <div>04</div> <span>Giây</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="menu3" class="couple">
+            <div class="couple-title">
+                <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
+                <h2>Cô dâu & Chú rể</h2>
+                <p>Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn.</p>
+            </div>
+            <div class="groom">
+                <div class="groom-img">
+                    <!-- <img src="./img/groom3.JPG" alt="desc"> -->
+                </div>
+                <div class="groom-context">
+                    <h2>Phạm Đức Toàn</h2>
+                    <p>Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”</p>
+                </div>
+            </div>
+            <div class="bride">
+                <div class="bride-context">
+                    <h2>Phạm Thị Thùy Trang</h2>
+                    <p>Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.</p>
+                </div>
+                <div class="bride-img">
+                    <!-- <img src="./img/bride3.JPG" alt="desc"> -->
+                </div>
+            </div>
+        </div>
+        <div id="menu4" class="album"></div>
+        <div id="menu5" class="event"></div>
     </div>
     <div class="float btnleft">
         <div class="button button1"><i style="font-size:12px" class="fa">&#xf028;</i></div>
@@ -73,5 +228,7 @@
     </div>
     <footer></footer>
     <script src="index.js"></script>
+    <script src="index2.js"></script>
 </body>
+
 </html>

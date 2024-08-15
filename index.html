@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&Comfortaa:wght@300..700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,8 +39,8 @@
         <div id="menu">
             <div class="placeholder"></div>
             <div><a href="#menu3">Cặp đôi</a></div>
-            <div><a href="#menu4">Album cưới</a></div>
             <div><a href="#menu5">Sự kiện cưới</a></div>
+            <div><a href="#menu4">Album cưới</a></div>
             <div class="placeholder"></div>
         </div>
         <!-- <div id="sidebar">
@@ -217,8 +217,154 @@
                 </div>
             </div>
         </div>
-        <div id="menu4" class="album"></div>
-        <div id="menu5" class="event"></div>
+        <div id="menu5" class="event">
+            <div class="couple-title">
+                <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
+                <h2>Sự kiện cưới</h2>
+                <p>Gặp nhiều người ở thời điểm khác nhau cũng không huy hoàng bằng gặp đúng người đúng thời điểm.</p>
+            </div>
+            <div class="event-content">
+                <div class="event-box">
+                    <h3>LỄ CƯỚI NHÀ GÁI</h3>
+                    <hr class="custom-line">
+                    <div class="img-event">
+                        <img src="./img/event.png" alt="" srcset="">
+                    </div>
+                    <div class="date">09:30 AM 14/09/2024</div>
+                    <div class="address">Xóm 3 Làng Hành Thiện, xã Xuân Hồng, huyện Xuân Trường, Nam Định</div>
+                    
+                </div>
+                <div class="event-box">
+                    <h3>TIỆC CƯỚI NHÀ GÁI</h3>
+                    <hr class="custom-line">
+                    <div class="img-event">
+                        <img src="./img/event.png" alt="" srcset="">
+                    </div>
+                    <div class="date">10:30 AM 14/09/2024</div>
+                    <div class="address">Xóm 3 Làng Hành Thiện, xã Xuân Hồng, huyện Xuân Trường, Nam Định</div>
+                    
+                </div>
+                <div class="event-box">
+                    <h3>LỄ CƯỚI NHÀ TRAI</h3>
+                    <hr class="custom-line">
+                    <div class="img-event">
+                        <img src="./img/event.png" alt="" srcset="">
+                    </div>
+                    <div class="date">15:30 PM 14/09/2024</div>
+                    <div class="address">Xóm 3 Thôn Liên Tân, xã Phương Trung, huyện Thanh Oai, Hà Nội</div>
+                    
+                </div>
+                <div class="event-box">
+                    <h3>TIỆC CƯỚI NHÀ TRAI</h3>
+                    <hr class="custom-line">
+                    <div class="img-event">
+                        <img src="./img/event.png" alt="" srcset="">
+                    </div>
+                    <div class="date">17:00 PM 14/09/2024</div>
+                    <div class="address">Xóm 3 Thôn Liên Tân, xã Phương Trung, huyện Thanh Oai, Hà Nội</div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- <div id="menu4" class="album">
+            <div class="couple-title">
+                <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
+                <h2>Album ảnh cưới</h2>
+                <p>Đối với thế giới, em chỉ là một người trong đó, nhưng đối với anh, em là cả thế giới của anh</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-img">
+                    <img src="./img/bride.JPG" alt="" srcset="">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/groom.JPG" alt="" srcset="">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_06817.JPG" alt="" srcset="">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07152.JPG" alt="" srcset="">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07435.JPG" alt="" srcset="">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07476.JPG" alt="" srcset="">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07509.JPG" alt="" srcset="">
+                </div>
+            </div>
+        </div> -->
+        <div id="menu4" class="album">
+            <div class="couple-title">
+                <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
+                <h2>Album ảnh cưới</h2>
+                <p>Đối với thế giới, em chỉ là một người trong đó, nhưng đối với anh, em là cả thế giới của anh</p>
+            </div>
+            <div class="gallery">
+                <div class="gallery-img">
+                    <img src="./img/bride.JPG" alt="" onclick="openModal(0)">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/groom.JPG" alt="" onclick="openModal(1)">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_06817.JPG" alt="" onclick="openModal(2)">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07476.JPG" alt="" onclick="openModal(5)">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07152.JPG" alt="" onclick="openModal(3)">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07435.JPG" alt="" onclick="openModal(4)">
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/GR_07509.JPG" alt="" onclick="openModal(6)">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="focus-image-container">
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <div class="focus-image">
+                        <img id="mainImage" src="" alt="Focused Image">
+                    </div>
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+                </div>
+                <div class="thumbnail-gallery">
+                    <div class="thumbnail-img">
+                        <img src="./img/bride.JPG" alt="" onclick="currentImage(0)">
+                    </div>
+                    <div class="thumbnail-img">
+                        <img src="./img/groom.JPG" alt="" onclick="currentImage(1)">
+                    </div>
+                    <div class="thumbnail-img">
+                        <img src="./img/GR_06817.JPG" alt="" onclick="currentImage(2)">
+                    </div>
+                    <div class="thumbnail-img">
+                        <img src="./img/GR_07476.JPG" alt="" onclick="openModal(5)">
+                    </div>
+                    <div class="thumbnail-img">
+                        <img src="./img/GR_07152.JPG" alt="" onclick="openModal(3)">
+                    </div>
+                    <div class="thumbnail-img">
+                        <img src="./img/GR_07435.JPG" alt="" onclick="openModal(4)">
+                    </div>
+                    <div class="thumbnail-img">
+                        <img src="./img/GR_07509.JPG" alt="" onclick="openModal(6)">
+                    </div>
+                    <!-- Add more thumbnails as needed -->
+                </div>
+            </div>
+        </div>
     </div>
     <div class="float btnleft">
         <div class="button button1"><i style="font-size:12px" class="fa">&#xf028;</i></div>

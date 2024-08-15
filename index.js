@@ -59,3 +59,51 @@ showSlide(currentSlide);
 
 // Change slide every 2 seconds
 setInterval(nextSlide, slideInterval);
+
+function changeImage(thumbnail) {
+  var mainImage = document.getElementById('mainImage');
+  mainImage.src = thumbnail.src;
+}
+
+// modal
+let currentSlide2 = 0;
+let autoSlideInterval;
+const images = [
+    './img/bride.JPG',
+    './img/groom.JPG',
+    './img/GR_06817.JPG',
+    './img/GR_07152.JPG',
+    './img/GR_07435.JPG',
+    './img/GR_07476.JPG',
+    './img/GR_07509.JPG'
+    // Add more image paths as needed
+];
+
+function openModal(slideIndex) {
+    currentSlide2 = slideIndex;
+    document.getElementById('imageModal').style.display = "flex";
+    showImage(currentSlide2);
+    autoSlideInterval = setInterval(() => changeImage(1), 7000);
+}
+
+function closeModal() {
+    document.getElementById('imageModal').style.display = "none";
+    clearInterval(autoSlideInterval);
+}
+
+function showImage(index) {
+    const mainImage = document.getElementById('mainImage');
+    mainImage.src = images[index];
+}
+
+function changeImage(n) {
+    currentSlide2 = (currentSlide2 + n + images.length) % images.length;
+    showImage(currentSlide2);
+}
+
+function currentImage(index) {
+    clearInterval(autoSlideInterval);
+    currentSlide2 = index;
+    showImage(currentSlide2);
+    autoSlideInterval = setInterval(() => changeImage(1), 7000);
+}

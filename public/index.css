@@ -145,6 +145,10 @@ footer {
     right: 2%;
 }
 
+.btnright :hover{
+    cursor: pointer;
+}
+
 .button {
     background-color: #d44079;
     border: none;
@@ -449,12 +453,12 @@ body.menu-open {
 }
 
 .groom-img{
-    height: 650px;
+    height: 450px;
     width: 50%;
     overflow: hidden;
     background-image: url(./img/groom.JPG);
-    background-size: cover;
-    /* background-position: center; */
+    background-size: 90%;
+    background-position: center 20%;
 }
 
 /* .groom-img img{
@@ -508,12 +512,12 @@ body.menu-open {
 }
 
 .bride-img{
-    height: 650px;
+    height: 450px;
     width: 50%;
     overflow: hidden;
     background-image: url(./img/bride.JPG);
-    background-size: cover;
-    background-position: center;
+    background-size: 120%;
+    background-position: center 35%;
 }
 
 /* .bride-img img{
@@ -558,6 +562,10 @@ body.menu-open {
     .bride-context{
         width: 100% !important;
         padding: 40px 30px !important;
+    }
+
+    .bride-context h2{
+        font-size: 2.25em;
     }
 }
 
@@ -858,6 +866,140 @@ body.menu-open {
 }
 /* end */
 
+/* Invitation Modal Begin */
+#invitationModal .close{
+    color: #000 !important;
+}
+#invitationModal .modal-content{
+    justify-content: space-evenly;
+}
+
+.invitation-title{
+    font-family: "Montserrat";
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f2e2e6;
+    height: 60%;
+    width: 100%;
+    border-bottom: solid 1px rgb(213, 213, 213);
+}
+
+.invitation-title .image{
+    height: 55%;
+    max-width: 20%;
+    border-radius: 50%;
+    /* border-color: red;
+    border-width: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+.invitation-title .image img{
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    transform: scale(2.3) translateX(5%);
+}
+
+.invitation-title h2{
+    font-weight: bold;
+}
+
+.invitation-title p{
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.invitation-title span{
+    color: #d27f7c;
+} 
+
+@media screen and (max-width: 900px) {
+    .invitation-title .image{        
+        max-width: 50%;
+    }
+}
+
+.invitation-title h3{
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.invitation-confirmbox {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff !important;
+    text-align: center;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10%;
+}
+
+.invitation-confirmbox input{
+    text-align: center;
+}
+
+.confirmbox-title h2 {
+    margin-bottom: 20px;
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ea6487 !important;
+}
+
+.confirmbox-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.confirmbox-input input:focus {
+    border-color: #ee7d92;
+}
+
+.confirmbox-btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ea6487;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 60%;
+}
+
+.confirmbox-btn button:hover {
+    background-color: #3fe188;
+}
+
+.alert {
+    margin-top: 20px;
+}
+/* Invitation Modal End */
+
+.show{
+    display: flex !important;
+}
 @media screen and (max-width: 900px) {
     .event-box{
         width: 100%;

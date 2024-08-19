@@ -107,3 +107,51 @@ function currentImage(index) {
     showImage(currentSlide2);
     autoSlideInterval = setInterval(() => changeImage(1), 7000);
 }
+
+function openInvitationModal(slideIndex) {
+    document.getElementById('invitationModal').style.display = "flex";
+}
+
+function closeInvitationModal() {
+    document.getElementById('invitationModal').style.display = "none";
+}
+
+function saveToJson(branch) {
+    const guestName = document.getElementById('guestName').value;
+    const messageContainer = document.getElementById('messageContainer');
+
+    if (guestName.trim() === "") {
+        showMessage("Please enter your name.", "danger");
+        return;
+    }
+
+    const data = {
+        name: guestName
+    };
+
+    fetch(`/${branch}/save`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        showMessage(data.message, "success");
+        document.getElementById('guestName').value = '';
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        showMessage("Error saving data. Please try again.", "danger");
+    });
+}
+
+function showMessage(message, type) {
+    const messageContainer = document.getElementById('messageContainer');
+    const alertClass = type === "success" ? "alert-success" : "alert-danger";
+    messageContainer.innerHTML = `<div class="alert ${alertClass} alert-dismissible fade show" role="alert">
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>`;
+}

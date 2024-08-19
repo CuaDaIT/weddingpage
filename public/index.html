@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&Comfortaa:wght@300..700&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -204,7 +205,7 @@
                 </div>
                 <div class="groom-context">
                     <h2>Phạm Đức Toàn</h2>
-                    <p>Là bác sĩ nha khoa hiện đang công tác tại một phòng khám nha khoa ở Quận 1 thành phồ Hồ Chí Minh. Là một người hiền lành và ít nói. Luôn coi trọng tình cảm và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”</p>
+                    <p>Là một lập trình viên đang làm việc tại thành phố Hà Nội, trầm tính, ít nói nhưng rất hiền lành. Luôn coi trọng tình cảm, sự sẻ chia và yêu thương gia đình. Với anh: “Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đối với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về.”</p>
                 </div>
             </div>
             <div class="bride">
@@ -266,36 +267,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="menu4" class="album">
-            <div class="couple-title">
-                <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
-                <h2>Album ảnh cưới</h2>
-                <p>Đối với thế giới, em chỉ là một người trong đó, nhưng đối với anh, em là cả thế giới của anh</p>
-            </div>
-            <div class="gallery">
-                <div class="gallery-img">
-                    <img src="./img/bride.JPG" alt="" srcset="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/groom.JPG" alt="" srcset="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/GR_06817.JPG" alt="" srcset="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/GR_07152.JPG" alt="" srcset="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/GR_07435.JPG" alt="" srcset="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/GR_07476.JPG" alt="" srcset="">
-                </div>
-                <div class="gallery-img">
-                    <img src="./img/GR_07509.JPG" alt="" srcset="">
-                </div>
-            </div>
-        </div> -->
         <div id="menu4" class="album">
             <div class="couple-title">
                 <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
@@ -365,12 +336,35 @@
                 </div>
             </div>
         </div>
+        <div id="invitationModal" class="modal">
+            <span class="close" onclick="closeInvitationModal()">&times;</span>
+            <div class="modal-content">
+                <div class="invitation-title">
+                    <div class="invitation-title image"><img class=".border-danger " src="./img/GR_06817.JPG" alt="desc"></div>
+                    <h2>XÁC NHẬN THAM DỰ</h2>
+                    <p>Đám cưới của</p>
+                    <h3>Đức Toàn <img height="50" src="https://cuatun.iwedding.info/album/heart.gif"> Thùy Trang</h3>
+                </div>
+                <div class="invitation-confirmbox p-4 rounded">
+                    <div class="confirmbox-title mb-3">
+                        <h2 class="text-center text-primary">Nhập họ tên của bạn</h2>
+                    </div>
+                    <div class="confirmbox-input mb-3">
+                        <input type="text" id="guestName" class="form-control form-control-lg" placeholder="Họ và tên">
+                    </div>
+                    <div class="confirmbox-btn text-center">
+                        <button id="saveBtn" class="btn btn-primary btn-lg" onclick="saveToJson()">Xác nhận tham dự</button>
+                    </div>
+                </div>
+                <div id="messageContainer" class="mt-3"></div>
+            </div>
+        </div>
     </div>
     <div class="float btnleft">
         <div class="button button1"><i style="font-size:12px" class="fa">&#xf028;</i></div>
     </div>
     <div class="float btnright">
-        <div class="button button2"><i style="font-size:12px" class="fa">&#xf1d8;</i></div>
+        <div class="button button2" onclick="openInvitationModal()"><i style="font-size:12px" class="fa">&#xf1d8;</i></div>
     </div>
     <footer></footer>
     <script src="index.js"></script>

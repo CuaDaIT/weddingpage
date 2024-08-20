@@ -126,10 +126,11 @@ function saveToJson(branch) {
     }
 
     const data = {
+        branch: branch,
         name: guestName
     };
 
-    fetch(`/${branch}/save`, {
+    fetch(`/save`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -152,7 +153,6 @@ function showMessage(message, type) {
     const alertClass = type === "success" ? "alert-success" : "alert-danger";
     messageContainer.innerHTML = `<div class="alert ${alertClass} alert-dismissible fade show" role="alert">
         ${message}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`;
 }
 
@@ -188,3 +188,18 @@ setInterval(() => {
         createHeart();
     }
 }, 2000);
+
+function toggleMusic() {
+    const music = document.getElementById('background-music');
+    let btn_music1 = document.querySelector('#i1');
+    let btn_music2 = document.querySelector('#i2');
+    if (music.paused) {
+        music.play();
+        btn_music1.classList.remove('showi');
+        btn_music2.classList.add('showi');
+    } else {
+        music.pause();
+        btn_music1.classList.add('showi');
+        btn_music2.classList.remove('showi');
+    }
+}

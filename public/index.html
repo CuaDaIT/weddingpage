@@ -16,8 +16,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
     <title>Document</title>
@@ -211,7 +213,7 @@
             <div class="bride">
                 <div class="bride-context">
                     <h2>Phạm Thị Thùy Trang</h2>
-                    <p>Cô gái đến từ xứ Huế mộng mơ, hiện đang sinh sống và làm việc tại Sài Gòn. Sau khi tốt nghiệp Học viện Báo chí và Tuyên truyền, quyết tâm theo đuổi đam mê làm phóng viên du lịch. Là một người hay cười nhưng lại sống nội tâm, thích đọc sách, trồng cây và yêu thiên nhiên. Ngoài ra còn rất thích vẽ vời, nuôi mèo và nuôi ước mơ có cho mình một vườn hồng khoe sắc.</p>
+                    <p>Cô gái đến từ Nam Định, hiện đang sinh sống và làm việc tại Hà Nội. Sau khi tốt nghiệp Đại Học Hà Nội, theo đuổi và gắn bó với công việc kiểm thử phần mềm. Là một người hay cười, giàu cảm xúc, thích nấu ăn cho những người thân yêu. Với cô gái : "Chân thành là sợi dây kết nối mạnh mẽ nhất trong các mối quan hệ xung quanh ta, từ tình bạn, tình yêu và tình thân!"</p>
                 </div>
                 <div class="bride-img">
                     <!-- <img src="./img/bride3.JPG" alt="desc"> -->
@@ -353,7 +355,7 @@
                         <input type="text" id="guestName" class="form-control form-control-lg" placeholder="Họ và tên">
                     </div>
                     <div class="confirmbox-btn text-center">
-                        <button id="saveBtn" class="btn btn-primary btn-lg" onclick="saveToJson()">Xác nhận tham dự</button>
+                        <button id="saveBtn" class="btn btn-primary btn-lg" onclick="saveToJson('me')">Xác nhận tham dự</button>
                     </div>
                 </div>
                 <div id="messageContainer" class="mt-3"></div>
@@ -361,12 +363,16 @@
         </div>
     </div>
     <div class="float btnleft">
-        <div class="button button1"><i style="font-size:12px" class="fa">&#xf028;</i></div>
+        <div class="button button1" onclick="toggleMusic()"><i id="i1" class="fas fa-volume-mute" style="font-size:16px"></i><i id="i2" class="fas fa-volume-up showi" style="font-size:16px"></i></div>
     </div>
     <div class="float btnright">
         <div id="noticeButton" class="button button2" onclick="openInvitationModal()"><i style="font-size:12px" class="fa">&#xf1d8;</i></div>
     </div>
     <div id="buttonLabel">Xác nhận tham dự </div>
+    <audio id="background-music" autoplay loop>
+        <source src="./background-music/biw.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <footer class="site-footer footer-style-1">
         <div class="inner">
             <div class="couple-pic">

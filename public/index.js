@@ -155,3 +155,36 @@ function showMessage(message, type) {
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`;
 }
+
+function createHeart() {
+    const heartContainer = document.getElementById('heartContainer');
+    const heart = document.createElement('img');
+    heart.src = './img/heart.png'; // Replace with the path to your heart image
+    heart.classList.add('hearts');
+
+    // Random horizontal position
+    heart.style.left = Math.random() * 100 + 'vw';
+
+    // Random size for each heart
+    const size = Math.random() * 20 + 10; // Size between 10px and 30px
+    heart.style.width = `${size}px`;
+    heart.style.height = `${size}px`;
+
+    // Random duration for the fall animation
+    heart.style.animationDuration = Math.random() * 3 + 2 + 's'; // Duration between 2s and 5s
+
+    // Add the heart to the container
+    heartContainer.appendChild(heart);
+
+    // Remove the heart after the animation ends
+    setTimeout(() => {
+        heart.remove();
+    }, 5000); // Match this with the animation duration
+}
+
+// Create multiple hearts every 2 seconds
+setInterval(() => {
+    for (let i = 1; i < 5; i++) {
+        createHeart();
+    }
+}, 2000);

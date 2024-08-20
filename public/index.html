@@ -23,7 +23,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body><div id="heartContainer"></div>
     <header id="header">
         <banner id="banner">
             <div class="top-tier">
@@ -42,7 +42,7 @@
             <div><a href="#menu3">Cặp đôi</a></div>
             <div><a href="#menu5">Sự kiện cưới</a></div>
             <div><a href="#menu4">Album cưới</a></div>
-            <div class="placeholder"></div>
+            <div class="placeholder">
         </div>
         <!-- <div id="sidebar">
             <button id="closeBtn" class="close-btn">×</button>
@@ -364,9 +364,17 @@
         <div class="button button1"><i style="font-size:12px" class="fa">&#xf028;</i></div>
     </div>
     <div class="float btnright">
-        <div class="button button2" onclick="openInvitationModal()"><i style="font-size:12px" class="fa">&#xf1d8;</i></div>
+        <div id="noticeButton" class="button button2" onclick="openInvitationModal()"><i style="font-size:12px" class="fa">&#xf1d8;</i></div>
     </div>
-    <footer></footer>
+    <div id="buttonLabel">Xác nhận tham dự </div>
+    <footer class="site-footer footer-style-1">
+        <div class="inner">
+            <div class="couple-pic">
+                <img src="" alt="Phạm Đức Toàn &amp; Phạm Thị Thùy Trang Wedding site!">
+            </div>
+            <h2>Thank you!</h2>
+        </div>
+    </footer>
     <script src="index.js"></script>
     <script src="index2.js"></script>
 </body>

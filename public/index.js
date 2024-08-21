@@ -70,13 +70,13 @@ let currentSlide2 = 0;
 let autoSlideInterval;
 const images = [
     './img/bride2.JPG',
-    './img/11.JPG',
+    './img/groom2.JPG',
     './img/GR_06817.JPG',
     './img/GR_07152.JPG',
     './img/GR_07435.JPG',
     './img/GR_07476.JPG',
     './img/GR_07509.JPG',
-    './img/06.JPG'
+    './img/GR_06.JPG'
     // Add more image paths as needed
 ];
 

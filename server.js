@@ -60,7 +60,7 @@ app.post('/save', (req, res) => {
             dat = JSON.stringify(jsonData);
         } catch (err) {
             console.error('Error converting data to JSON:', err);
-            res.status(500).json({ success: false, message: 'Failed to convert data to JSON' });
+            res.status(500).json({ success: false, message: 'Failed to convert data' });
             return;
         }
     
@@ -72,7 +72,7 @@ app.post('/save', (req, res) => {
                 return res.status(500).json({ message: 'Error writing to data file' });
             }
             console.log(JSON.stringify(jsonData));
-            res.status(200).json({ message: 'Data saved successfully'});
+            res.status(200).json({ message: 'Xác nhận thành công'});
         });
     });
 });

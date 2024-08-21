@@ -224,7 +224,7 @@ function toggleMusic() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const audio = document.getElementById('backgroundAudio');
+    const audio = document.getElementById('background-music');
     audio.play().catch(error => {
         console.log('Autoplay prevented:', error);
     });

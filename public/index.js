@@ -222,3 +222,10 @@ function toggleMusic() {
         btn_music2.classList.remove('showi');
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('backgroundAudio');
+    audio.play().catch(error => {
+        console.log('Autoplay prevented:', error);
+    });
+});

@@ -955,6 +955,7 @@ body {
 
 .confirmbox-btn button:hover {
     background-color: #3fe188;
+    color: white;
 }
 
 .alert {
@@ -1000,7 +1001,7 @@ body {
     position: fixed;
     bottom: calc(5% + 10px); /* Adjust to align with the button */
     right: calc(2% + 52px); /* Position to the left of the button */
-    background-color: #df4758;
+    background-color: #d44079;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -1021,7 +1022,7 @@ body {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent transparent #df4758;
+    border-color: transparent transparent transparent #d44079;
 }
 
 @keyframes fadeInOut {
@@ -1254,3 +1255,118 @@ img {
     color: #b2c9d3;
   }
   
+  #donateBtn{
+    background-color: #98e13f;
+  }
+
+  #donateBtn:hover{
+    background-color: #e681a8;
+    color: white;
+  }
+
+  .donation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  #donationModal .modal-content{
+    overflow-y: auto;
+  }
+
+  .donation h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .qr-info{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    width: 100%;
+  }
+
+  .qr-info a{
+    text-decoration: none;
+    color: white !important;
+    width: 60%;
+  }
+
+  .qr-info a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #d25585;
+  }
+
+  .qr-btndownload{
+    background-color: #d44079;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .donation-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#donationModal .close{
+    color: #000 !important;
+}
+
+.qr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.qr-image{
+    width: 100%;
+    background-color: white;
+}
+
+  @media (max-width: 900px) {
+    .donation-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+  }
+
+footer .couple-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+footer h2{
+    font-family: "Dancing Script", cursive !important;
+    font-size: 4em !important;
+    font-weight: 400;
+    font-style: normal;
+    color: #ee7d92;
+}
+
+#messageContainer{
+    position: absolute;
+    top: 10px;
+
+}

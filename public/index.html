@@ -231,7 +231,7 @@
                     <h3>LỄ CƯỚI NHÀ GÁI</h3>
                     <hr class="custom-line">
                     <div class="img-event">
-                        <img src="./img/event.png" alt="" srcset="">
+                        <img src="./img/event-2.jpg" alt="" srcset="">
                     </div>
                     <div class="date">09:30 AM 14/09/2024</div>
                     <div class="address">Xóm 3 Làng Hành Thiện, xã Xuân Hồng, huyện Xuân Trường, Nam Định</div>
@@ -251,7 +251,7 @@
                     <h3>LỄ CƯỚI NHÀ TRAI</h3>
                     <hr class="custom-line">
                     <div class="img-event">
-                        <img src="./img/event.png" alt="" srcset="">
+                        <img src="./img/event-2.jpg" alt="" srcset="">
                     </div>
                     <div class="date">15:30 PM 14/09/2024</div>
                     <div class="address">Xóm 3 Thôn Liên Tân, xã Phương Trung, huyện Thanh Oai, Hà Nội</div>
@@ -268,6 +268,9 @@
                     
                 </div>
             </div>
+        </div>
+        <div id="submenu" class="confirm">
+            
         </div>
         <div id="menu4" class="album">
             <div class="couple-title">
@@ -355,10 +358,44 @@
                         <input type="text" id="guestName" class="form-control form-control-lg" placeholder="Họ và tên">
                     </div>
                     <div class="confirmbox-btn text-center">
-                        <button id="saveBtn" class="btn btn-primary btn-lg" onclick="saveToJson('me')">Xác nhận tham dự</button>
+                        <button id="saveBtn" class="btn btn-lg" onclick="saveToJson('me')">Xác nhận tham dự</button>
+                    </div>
+                    <div class="confirmbox-btn text-center">
+                        <button id="donateBtn" class="btn btn-lg" onclick="openDonation()">Mừng cưới online</button>
                     </div>
                 </div>
                 <div id="messageContainer" class="mt-3"></div>
+            </div>
+        </div>
+        <div id="donationModal" class="modal">
+            <span class="close" onclick="closeDonation()">&times;</span>
+            <div class="modal-content">
+                <div class="donation">
+                    <div class="donation-content">
+                        <div class="qr qr-codau">
+                            <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
+                            <h2>Mừng cưới chú rể</h2>
+                            <hr class="custom-line" style="width: 60%;">
+                            <div class="qr-image">
+                                <img src="./img/qr_chure.png" alt="qr mừng cưới chú rể" srcset="">
+                            </div>
+                            <div class="qr-info">
+                                <a href="./img/qr_chure.png" download="qr_chure.png" class="qr-btndownload"  onclick="downloadQr()"><i class="fas fa-arrow-down"></i> Tải xuống QR chú rể</a>
+                            </div>
+                        </div>
+                        <div class="qr qr-chure">
+                            <div class="couple-title-image"><img src="./img/toppng.png" alt="desc"></div>
+                            <h2>Mừng cưới cô dâu</h2>
+                            <hr class="custom-line" style="width: 60%;">
+                            <div class="qr-image">
+                                <img src="./img/qr_codau.png" alt="qr mừng cưới cô dâu" srcset="">
+                            </div>
+                            <div class="qr-info">
+                                <a href="./img/qr_codau.png" download="qr_codau.png" class="qr-btndownload" onclick="downloadQr()"><i class="fas fa-arrow-down"></i> Tải xuống QR cô dâu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -376,9 +413,8 @@
     <footer class="site-footer footer-style-1">
         <div class="inner">
             <div class="couple-pic">
-                <img src="" alt="Phạm Đức Toàn &amp; Phạm Thị Thùy Trang Wedding site!">
+                <h2>Thank you!</h2>
             </div>
-            <h2>Thank you!</h2>
         </div>
     </footer>
     <script src="./index.js"></script>

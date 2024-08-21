@@ -110,10 +110,24 @@ function currentImage(index) {
 
 function openInvitationModal(slideIndex) {
     document.getElementById('invitationModal').style.display = "flex";
+    document.getElementById('noticeButton').style.display = "none";
+    document.getElementById('buttonLabel').style.display = "none";
 }
 
 function closeInvitationModal() {
     document.getElementById('invitationModal').style.display = "none";
+    document.getElementById('noticeButton').style.display = "flex";
+    document.getElementById('buttonLabel').style.display = "block";
+}
+
+function openDonation(){
+    document.getElementById('donationModal').style.display = "flex";
+    document.getElementById('noticeButton').style.display = "none";
+    document.getElementById('buttonLabel').style.display = "none";
+}
+
+function closeDonation(){
+    document.getElementById('donationModal').style.display = "none";
 }
 
 function saveToJson(branch) {
@@ -154,6 +168,10 @@ function showMessage(message, type) {
     messageContainer.innerHTML = `<div class="alert ${alertClass} alert-dismissible fade show" role="alert">
         ${message}
     </div>`;
+
+    setTimeout(() => {
+        messageContainer.innerHTML = ''; // Clears the message from the container
+    }, 5000);
 }
 
 function createHeart() {
@@ -184,10 +202,10 @@ function createHeart() {
 
 // Create multiple hearts every 2 seconds
 setInterval(() => {
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i < 3; i++) {
         createHeart();
     }
-}, 2000);
+}, 3000);
 
 function toggleMusic() {
     const music = document.getElementById('background-music');

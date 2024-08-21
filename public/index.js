@@ -23,7 +23,7 @@ function myFunction() {
 let currentSlide = 0;
 const slidesContainer = document.querySelector('.slides-container');
 const slides = document.querySelectorAll('.slide');
-const slideInterval = 10000; // Time in milliseconds (10 seconds)
+const slideInterval = 3000; // Time in milliseconds (10 seconds)
 
 // Create a clone of the first slide and append it to the end
 const firstSlide = slides[0].cloneNode(true);

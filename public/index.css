@@ -420,7 +420,7 @@ body {
     height: 450px;
     width: 50%;
     overflow: hidden;
-    background-image: url(./img/groom.JPG);
+    background-image: url(./img/11.JPG);
     background-size: 90%;
     background-position: center 20%;
 }
@@ -919,10 +919,10 @@ body {
 }
 
 .confirmbox-title h2 {
-    margin-bottom: 20px;
-    font-family: "Sofia", cursive;
+    font-family: "Montserrat";
     font-weight: 400;
     font-style: normal;
+    font-size: 1.75rem;
     color: #ea6487 !important;
 }
 
@@ -954,7 +954,7 @@ body {
 }
 
 .confirmbox-btn button:hover {
-    background-color: #3fe188;
+    background-color: #e5819c;
     color: white;
 }
 
@@ -1256,11 +1256,11 @@ img {
   }
   
   #donateBtn{
-    background-color: #98e13f;
+    background-color: #77dd77;
   }
 
   #donateBtn:hover{
-    background-color: #e681a8;
+    background-color: #89E894;
     color: white;
   }
 
@@ -1369,4 +1369,15 @@ footer h2{
     position: absolute;
     top: 10px;
 
+}
+
+.s1 img{
+    src: url(./img/GR_07522_small.jpg);
+}
+
+ 
+@media (max-width: 767px) {
+    .s4 img{
+        
+    }
 }

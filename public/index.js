@@ -69,13 +69,14 @@ function changeImage(thumbnail) {
 let currentSlide2 = 0;
 let autoSlideInterval;
 const images = [
-    './img/bride.JPG',
-    './img/groom.JPG',
+    './img/bride2.JPG',
+    './img/11.JPG',
     './img/GR_06817.JPG',
     './img/GR_07152.JPG',
     './img/GR_07435.JPG',
     './img/GR_07476.JPG',
-    './img/GR_07509.JPG'
+    './img/GR_07509.JPG',
+    './img/06.JPG'
     // Add more image paths as needed
 ];
 

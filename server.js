@@ -69,10 +69,10 @@ app.post('/save', (req, res) => {
         fs.writeFile(dataFilePath, dat, 'utf-8', (err) => {
             if (err) {
                 console.error('Error writing to data file:', err);
-                return res.status(500).json({ message: 'Error writing to data file' });
+                return res.status(500).json({ message: 'Vui lòng nhập họ và tên!' });
             }
             console.log(JSON.stringify(jsonData));
-            res.status(200).json({ message: 'Xác nhận thành công'});
+            res.status(200).json({ message: 'Đã xác nhận tham dự!'});
         });
     });
 });

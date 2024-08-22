@@ -136,7 +136,7 @@ function saveToJson(branch) {
     const messageContainer = document.getElementById('messageContainer');
 
     if (guestName.trim() === "") {
-        showMessage("Please enter your name.", "danger");
+        showMessage("Vui lòng nhập họ và tên!", "danger");
         return;
     }
 
